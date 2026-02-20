@@ -1,0 +1,72 @@
+body{
+    display:flex;
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    background: url("abstract-textured-backgound_1258-30436.avif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.main{
+    height:400px;
+    width:250px;
+    display:grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+    "box-1 box-1 box-1 box-1"
+    "box-0 box-0 box-0 box-0 "
+    "box-2 box-3 box-4 box-5"
+    "box-6 box-7 box-8 box-9"
+    "box-10 box-11 box-12 box-13"
+    "box-14 box-15 box-16 box-17"
+    "box-18 box-19 box-20 box-21";
+    gap:0.5em;
+    
+
+    
+}
+button{
+    background-color:bisque;
+    cursor:pointer;
+    border:none;
+    border-radius: 1em;
+}
+.up{
+    grid-area: box-1;
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;        
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: beige;
+    border-radius: 1em;
+    cursor:pointer;
+}
+/* .title{
+    font-size: 40px;
+    color:rgb(14, 14, 17)
+} */
+.cut{
+    width:50px;
+}
+@media (max-width:400px){
+
+    .main{
+        grid-template-rows: 55px 70px repeat(5, 55px);
+    }
+
+    .up{
+        font-size:20px;
+    }
+
+    button{
+        font-size:16px;
+    }
+
+    /* .title{
+        font-size:24px;
+    } */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="main">
+    <div class="up" style="grid-area:box-1;justify-items: end;align-items: center;">0</div>
+    <!-- <div id="historyBox" class="historyBox" style="grid-area:box-01">👀</div> -->
+    <button class="cut" style="background-color: beige; grid-area:box-0" onclick="backspace()">⌫</button>
+    <!-- <button class="history" style="background-color: beige; grid-area:box-01" onclick="toggleHistory()">👀</button> -->
+        <button style="background-color: beige; grid-area:box-2" onclick="addval('(')">(</button>
+        <button style="background-color: beige; grid-area:box-3" onclick="addval(')')" >)</button>
+        <button style="background-color: beige; grid-area:box-4" onclick="addval('%')">%</button>
+        <button style="background-color: beige; grid-area:box-5" onclick="cleardisplay()">AC</button>
+    
+        <button style="grid-area:box-6" onclick="addval('7')">7</button>
+        <button style="grid-area:box-7" onclick="addval('8')">8</button>
+        <button style="grid-area:box-8" onclick="addval('9')">9</button>
+        <button style="background-color: beige; grid-area:box-9" onclick="addval('/')">/</button>
+    
+        <button style="grid-area:box-10" onclick="addval('4')">4</button>
+        <button style="grid-area:box-11" onclick="addval('5')">5</button>
+        <button style="grid-area:box-12" onclick="addval('6')">6</button>
+        <button style="background-color: beige; grid-area:box-13" onclick="addval('*')">*</button>
+
+        <button style="grid-area:box-14" onclick="addval('1')">1</button>
+        <button style="grid-area:box-15" onclick="addval('2')">2</button>
+        <button style="grid-area:box-16" onclick="addval('3')">3</button>
+        <button style="background-color: beige; grid-area:box-17" onclick="addval('-')">-</button>
+
+        <button style="grid-area:box-18" onclick="addval('0')">0</button>
+        <button style="background-color: beige; grid-area:box-19" onclick="addval('.')">.</button>
+        <button style="background-color: beige; grid-area:box-20" onclick="calculate()">=</button>
+        <button style="background-color: beige; grid-area:box-21" onclick="addval('+')">+</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
